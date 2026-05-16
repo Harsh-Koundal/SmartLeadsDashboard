@@ -33,8 +33,11 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-blue-400 dark:from-primary-400 dark:to-blue-300;
-  }
+  background: linear-gradient(to right,#2563eb,#60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 }
 
 /* Custom Scrollbar */
